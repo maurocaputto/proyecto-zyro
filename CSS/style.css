@@ -1,0 +1,555 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/*!------HEADER------*/
+
+
+header nav img{
+    height: 70px;
+}
+
+.bg-menu{
+    background-color: rgb(255, 121, 32);
+}
+
+.btn-outline-success{
+    color: rgb(255, 121, 32);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    
+}
+
+li .nav-link{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    
+}
+
+/*!------MAIN------*/
+/*?----INDEX----*/
+.hero{
+    height: 400px;
+    background-image: url("../img/Portada.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.presentacion{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+h1{
+    color: rgb(255, 121, 32);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 20px;
+}
+
+
+.presentacion img{
+    width: 70%;
+    margin: 30px;
+}
+
+.d-flex{
+    background-color: rgb(255, 121, 32);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.d-flex h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 20px;
+}
+.d-flex div{
+    border: 2px solid white;
+    margin: 50px;
+}
+
+
+
+
+.d-flex div a{
+    background-color: rgb(255, 121, 32) ;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    
+    
+}
+.d-flex div h5{
+    color: rgb(255, 121, 32);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+
+
+.ubicacion{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion h2{
+    color: rgb(255, 121, 32);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    
+    
+}
+.ubicacion p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin: 30px;
+    
+    
+}
+
+.ubicacion img{
+    height: 700px;
+    margin-left: 20px;
+    display: flex;
+    margin: 50px;
+    
+    
+}
+.ubicacion a{
+    background-color: orangered;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+/*?----BICICLETAS----*/
+
+.bicicletas div div {
+    border: 1px solid orange ;
+    width: 320px;
+    margin: 15px;
+    height: 350px;
+    text-align: center;
+    border-radius: 15px;
+}
+.bicicletas a img{
+    height: 300px;
+    width: 300px;
+
+}
+.bicicletas h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 20px;
+    background-color: rgba(255, 121, 32, 0.719);
+    height: 40px;
+    padding: 5px;
+    width: 400px;
+    border-radius: 10px;
+}
+.bicicletas div p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    background-color: rgba(255, 121, 32, 0.411);
+    height: 30px;
+    
+    
+    
+}
+
+/*?----ACCESORIOS----*/
+.accesorios{
+    background-color: white;
+    
+        
+}
+
+.accesorios div{
+    /*--display: flex;
+    justify-content: space-around;--*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 500px;
+    gap: 15px;
+    
+
+
+    
+}
+.accesorios h2{
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 121, 32, 0.719);
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 50px;
+    
+
+}
+
+.accesorios div div {
+    border: 1px solid orange;
+    width: 300px;
+    margin: 15px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    /*--display: flex;
+    flex-direction: column;
+    align-items: center;--*/
+    
+}
+.accesorios div a img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    
+    
+}
+.accesorios div p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    background-color: rgba(255, 121, 32, 0.411);
+    height: 30px;
+    width: 300px;
+    text-align: center;
+
+    border-end-start-radius: 15px;
+    border-end-end-radius: 15px;
+    position: absolute;
+   
+   
+    
+
+}
+
+/*?----NOSOTROS----*/
+
+.marca h2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(255, 121, 32, 0.719);
+    height: 40px;
+    padding: 5px;
+   
+}
+.marca p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin: 20px;
+}
+.marca img{
+    
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+/*?----CONTACTO----*/
+iframe{
+    margin-left: 20px;
+    height: 500px;
+    width: 500px;
+    display: inline;
+}
+.contacto h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.contacto form{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+    
+}
+.encontranos h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.encontranos div h3{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    margin-left: 20px;
+
+}
+.encontranos h4{
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+/*!------FOOTER------*/
+footer{
+    background-color: rgb(255, 121, 32);
+    height: 100px;
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+footer img{
+    height: 100px;
+}
+footer a img{
+    height: 40px;
+}
+.redes{
+    margin: 20px;
+}
+
+@media screen and (max-width:900px){
+    .hero{
+        height: 250px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .hero{
+        height: 100px;
+    }
+
+}
+
+
+@media screen and (max-width:700px){
+    .presentacion img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1240px){
+    .presentacion{
+        flex-direction: column;
+        height: 80%;
+    }
+    .presentacion img{
+        width: 60%;   
+    }
+    .presentacion h1{
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1190px){
+    .d-flex{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .d-flex h2{
+        margin: 5px;
+        text-align: center;
+    }
+    .d-flex div{
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:1070px){
+    .ubicacion{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .imagen{
+        display: none;    
+    }
+    
+}
+
+@media screen and (max-width:1628px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        
+        
+    }
+    
+
+}
+@media screen and (max-width:1330px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+}
+@media screen and (max-width:1010px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+}
+@media screen and (max-width:680px){
+    
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        height: 60px;
+    }
+    footer a img{
+        height: 25px;
+        
+    }
+    footer img{
+        height: 60px;
+    }
+}
+
+header nav ul li a:hover{
+    background-color: white;
+    padding: 5px;
+    color: rgb(255, 121, 32);
+
+}
+
+
+.d-flex div:hover{
+    border: 3px solid rgb(255, 255, 255);
+}
+.d-flex div a:hover{
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(255, 121, 32);
+    border: 1px solid rgb(255, 121, 32);  
+}
+
+@media screen and (max-width:900px){
+    .ubicacion{
+        text-align: center;
+    }
+}
+
+
+.btn-outline-success:hover{
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--<a href="./index.html"><img src="./img/Logo.png" alt="logo ZYRO"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Pages/bicicletas.html">Bicicletas</a></li>
+                <li><a href="./Pages/accesorios.html">Accesorios</a></li>
+                <li><a href="./Pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./Pages/contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>--*/
+
+        /*--<section class="productos">
+            <H2>Conoce nuestros productos</H2>
+            <div class="grid-item-1">
+                
+                <h3>Bicicletas</h3>
+                <img src="./img/Bicicleta.jpg" alt="se ve la rueda de la bicicleta con fondo atardecer">
+                <a href="./Pages/bicicletas.html" class="boton">CONOCE MAS</a>
+
+            </div>
+            <div>
+                <h3>E-bikes</h3>
+                <img src="./img/E-bike.jpg" alt="zoom del cuerpo de la e-bike sujetada por usuario">
+                <a href="./Pages/bicicletas.html" class="boton">CONOCE MAS</a>
+
+            </div>
+            <div>
+                <h3>Accesorios</h3>
+                <img src="./img/Accesorios.jpg" alt="hombre con lentes y casco mrando hacia adelante">
+                <a href="./Pages/accesorios.html" class="boton">CONOCE MAS</a>
+
+            </div>
+            
+        </section>--*/
