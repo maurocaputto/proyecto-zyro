@@ -1,0 +1,117 @@
+@media screen and (max-width:900px){
+    .hero{
+        height: 250px;
+    }
+
+}
+@media screen and (max-width:500px){
+    .hero{
+        height: 100px;
+    }
+
+}
+
+
+@media screen and (max-width:700px){
+    .presentacion img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1240px){
+    .presentacion{
+        flex-direction: column;
+        height: 80%;
+    }
+    .presentacion img{
+        width: 60%;   
+    }
+    .presentacion h1{
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1190px){
+    .d-flex{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .d-flex h2{
+        margin: 5px;
+        text-align: center;
+    }
+    .d-flex div{
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width:1070px){
+    .ubicacion{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .imagen{
+        display: none;    
+    }
+    
+}
+
+@media screen and (max-width:1628px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        
+        
+    }
+    
+
+}
+@media screen and (max-width:1330px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+}
+@media screen and (max-width:1010px){
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+}
+@media screen and (max-width:680px){
+    
+    .accesorios div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+        
+    }
+
+}
+
+@media screen and (max-width:600px){
+    footer{
+        height: 60px;
+        .redes a img{
+            height: 20px;
+        }
+        .logo img{
+            height: 60px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:900px){
+    .ubicacion{
+        text-align: center;
+    }
+}

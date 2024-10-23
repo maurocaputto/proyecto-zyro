@@ -1,0 +1,177 @@
+/*INDEX*/
+.hero{
+    height: 400px;
+    background-image: url("../img/Portada.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.presentacion{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+
+    h1{
+        color: $color-principal;
+        font-size: nth($font-size, 3);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        margin: 40px;
+        display: flex;
+        align-items: center;
+
+    }
+    img{
+        width: 55%;
+        margin: 30px;
+
+    }
+
+}
+.d-flex{
+    background-color: $color-principal;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    h2{
+        display: flex;
+        justify-content: center;
+        color:$color-secundario;
+        font-size: nth($font-size, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;  
+        align-items: center;
+
+    }
+    .card{
+        border: 2px solid $color-secundario;
+        margin: 50px;
+        align-items: center;
+        height: 640px;
+        display: flex;
+        justify-content: space-around;
+        height: 550px;
+        &:hover{
+            border: 3px solid rgb(255, 255, 255);
+        }
+        div{
+            h5{
+                color: $color-principal;
+                font-size: nth($font-size, 2);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500;
+
+            }
+            a{
+                background-color: $color-principal ;
+                color: $color-secundario;
+                padding: 8px;
+                border: none;
+                font-size: nth($font-size, 1);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 200;
+                &:hover{
+                    background-color: $color-secundario ;
+                    color: $color-principal;
+                    border: 1px solid $color-principal;
+                }
+
+            }
+        }
+    }
+}
+.ubicacion{
+    display: flex;
+    justify-content: space-around;
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: $color-principal;
+            font-size: nth($font-size, 2);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+
+        }
+        p{
+            color: $color-texto-secundario;
+            font-size: nth($font-size, 1);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200;
+            margin: 30px;
+
+        }
+        a{
+            background-color: $color-principal;
+            color: $color-secundario;
+            padding: 8px;
+            border-radius: 10px
+
+        }
+    }
+    .imagen{
+        img{
+            height: 700px;
+            margin-left: 20px;
+            display: flex;
+            margin: 50px;
+
+        }
+    }
+}
+
+/*ACCESORIOS*/
+.accesorios{
+    h2{
+        display: flex;
+        justify-content: center;
+        color: $color-secundario;
+        font-size: nth($font-size, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        background-color: $color-principal;
+        height: 40px;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 50px;
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr;
+        gap: 15px;
+        .tarjeta-accesorios{
+            border: 1px solid $color-principal;
+            width: 300px;
+            margin: 25px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            a{
+                img{
+                    height: 250px;
+                    width: 250px;
+                    margin: 15px;
+                    position: relative;
+
+                }
+            }
+            .descripcion{
+                color: $color-texto-secundario;
+                font-size: nth($font-size, 1);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 300;
+                position: absolute;
+                background-color: $color-principal;
+                padding: 5px;
+                width: 18rem;
+                border-top-left-radius: 15px;
+                border-top-right-radius:15px ;
+
+            }
+        }
+    }
+}

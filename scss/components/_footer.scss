@@ -1,0 +1,22 @@
+footer{
+    background-color: rgb(255, 121, 32);
+    height: 100px;
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px;
+    .logo{
+        img{
+            height: 100px;
+        }
+    }
+    .redes{
+        margin: 20px;
+        a{
+            img{
+                height: 40px;
+
+            }
+        }
+
+    }
+}

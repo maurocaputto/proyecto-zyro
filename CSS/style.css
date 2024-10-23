@@ -57,12 +57,14 @@ h1{
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    margin: 20px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
 }
 
 
 .presentacion img{
-    width: 70%;
+    width: 55%;
     margin: 30px;
 }
 
@@ -71,18 +73,30 @@ h1{
     padding: 50px;
     display: flex;
     justify-content: space-around;
+    
+    
 }
 
 .d-flex h2{
-    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    color:white;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    margin: 20px;
+    font-weight: 600;  
+    align-items: center;
+    
+
 }
-.d-flex div{
+
+.card{
     border: 2px solid white;
     margin: 50px;
+    align-items: center;
+    height: 640px;
+    display: flex;
+    justify-content: space-around;
+    height: 550px;
 }
 
 
@@ -101,7 +115,7 @@ h1{
 }
 .d-flex div h5{
     color: rgb(255, 121, 32);
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 
@@ -148,7 +162,7 @@ h1{
     
 }
 .ubicacion a{
-    background-color: orangered;
+    background-color: rgb(255, 121, 32);
     color: white;
     padding: 8px;
     border-radius: 10px;
@@ -195,11 +209,8 @@ h1{
 }
 
 /*?----ACCESORIOS----*/
-.accesorios{
-    background-color: white;
-    
-        
-}
+
+
 
 .accesorios div{
     /*--display: flex;
@@ -208,7 +219,7 @@ h1{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-auto-rows: 500px;
+    grid-template-rows: 1fr;
     gap: 15px;
     
 
@@ -232,40 +243,35 @@ h1{
 
 }
 
-.accesorios div div {
+.tarjeta-accesorios{
     border: 1px solid orange;
     width: 300px;
-    margin: 15px;
-    height: 300px;
+    margin: 25px;
     border-radius: 15px;
-    text-align: center;
-    /*--display: flex;
-    flex-direction: column;
-    align-items: center;--*/
+    margin-bottom: 50px;
+    
+    
     
 }
-.accesorios div a img{
+.tarjeta-accesorios a img{
     height: 250px;
     width: 250px;
+    margin: 15px;
     position: relative;
     
     
 }
-.accesorios div p{
+.descripcion{
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
-    background-color: rgba(255, 121, 32, 0.411);
-    height: 30px;
-    width: 300px;
-    text-align: center;
-
-    border-end-start-radius: 15px;
-    border-end-end-radius: 15px;
     position: absolute;
-   
-   
+    background-color: rgba(241, 105, 14, 0.507);
+    padding: 5px;
+    width: 18rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
     
 
 }
@@ -282,7 +288,6 @@ h1{
     background-color: rgba(255, 121, 32, 0.719);
     height: 40px;
     padding: 5px;
-   
 }
 .marca p{
     color: black;
@@ -456,6 +461,7 @@ footer a img{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(5,1fr);
+        
     }
 
 }
@@ -481,7 +487,7 @@ header nav ul li a:hover{
 }
 
 
-.d-flex div:hover{
+.card:hover{
     border: 3px solid rgb(255, 255, 255);
 }
 .d-flex div a:hover{
@@ -502,6 +508,9 @@ header nav ul li a:hover{
     color: rgb(255, 255, 255);
 }
 
+.tarjeta-accesorios:hover{
+    border: 3px solid rgb(255, 121, 32);
+}
 
 
 
@@ -516,40 +525,37 @@ header nav ul li a:hover{
 
 
 
-
-
-/*--<a href="./index.html"><img src="./img/Logo.png" alt="logo ZYRO"></a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Pages/bicicletas.html">Bicicletas</a></li>
-                <li><a href="./Pages/accesorios.html">Accesorios</a></li>
-                <li><a href="./Pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./Pages/contacto.html">Contacto</a></li>
-            </ul>
-            
-        </nav>--*/
-
-        /*--<section class="productos">
-            <H2>Conoce nuestros productos</H2>
-            <div class="grid-item-1">
+/*--<section class="accesorios">
+            <h2>Accesorios</h2>
+            <div>
+                <div class="grid-producto-1">
                 
-                <h3>Bicicletas</h3>
-                <img src="./img/Bicicleta.jpg" alt="se ve la rueda de la bicicleta con fondo atardecer">
-                <a href="./Pages/bicicletas.html" class="boton">CONOCE MAS</a>
-
-            </div>
-            <div>
-                <h3>E-bikes</h3>
-                <img src="./img/E-bike.jpg" alt="zoom del cuerpo de la e-bike sujetada por usuario">
-                <a href="./Pages/bicicletas.html" class="boton">CONOCE MAS</a>
-
-            </div>
-            <div>
-                <h3>Accesorios</h3>
-                <img src="./img/Accesorios.jpg" alt="hombre con lentes y casco mrando hacia adelante">
-                <a href="./Pages/accesorios.html" class="boton">CONOCE MAS</a>
+                    <a href=""><img src="../img/Guantes-alto-rendimiento.jpg" alt="guantes color negro sin dedos"></a>
+                    <p>Guantes alto rendimiento</p>
+                </div>
+                
+                <div class="grid-producto-2"> 
+                    <a href=""><img src="../img/Casco-mh15.jpg" alt="Casco deportivo negro y rojo"></a>
+                    <p>Casco mh15</p>
+                </div>
+                
+                <div class="grid-producto-3">
+                    
+                    <a href=""><img src="../img/Inflador.jpg" alt="Inflador de bicicleta negro"></a>
+                    <p>Inflador</p>
+                </div>
+                <div class="grid-producto-4">
+                    
+                    <a href=""><img src="../img/Casco-urbano.jpg" alt="Inflador de bicicleta negro"></a>
+                    <p>Casco urbano</p>
+                </div>
+                <div class="grid-producto-5">
+                    
+                    <a href=""><img src="../img/Guantes-de-silicona.jpg" alt="Inflador de bicicleta negro"></a>
+                    <p>Guantes de silicona</p>
+                </div>
 
             </div>
             
+
         </section>--*/

@@ -1,0 +1,33 @@
+.nav-link{
+    color: $color-secundario;
+    &:hover{
+        background-color: $color-secundario;  
+        padding: 5px;
+        color: $color-principal;
+    }
+}
+.navbar-brand{
+    img{
+        height:70px;
+    }
+}
+.bg-menu{
+    background-color: $color-principal;
+}
+.btn-outline-success{
+    color: $color-principal;
+    background-color:$color-secundario;
+    border:none;
+}
+li{
+    .nav-lin{
+        color: $color-secundario;
+        font-size: nth($font-size, 1);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+    }
+}
+.btn-outline-success:hover{
+    background-color: $color-terciario;
+    color: $color-secundario;
+}

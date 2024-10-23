@@ -1,0 +1,264 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.nav-link {
+  color: white; }
+  .nav-link:hover {
+    background-color: white;
+    padding: 5px;
+    color: #ff7920; }
+
+.navbar-brand img {
+  height: 70px; }
+
+.bg-menu {
+  background-color: #ff7920; }
+
+.btn-outline-success {
+  color: #ff7920;
+  background-color: white;
+  border: none; }
+
+li .nav-lin {
+  color: white;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500; }
+
+.btn-outline-success:hover {
+  background-color: orangered;
+  color: white; }
+
+/*INDEX*/
+.hero {
+  height: 400px;
+  background-image: url("../img/Portada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.presentacion {
+  height: 600px;
+  display: flex;
+  justify-content: space-around; }
+  .presentacion h1 {
+    color: #ff7920;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+    align-items: center; }
+  .presentacion img {
+    width: 55%;
+    margin: 30px; }
+
+.d-flex {
+  background-color: #ff7920;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around; }
+  .d-flex h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    align-items: center; }
+  .d-flex .card {
+    border: 2px solid white;
+    margin: 50px;
+    align-items: center;
+    height: 640px;
+    display: flex;
+    justify-content: space-around;
+    height: 550px; }
+    .d-flex .card:hover {
+      border: 3px solid white; }
+    .d-flex .card div h5 {
+      color: #ff7920;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 500; }
+    .d-flex .card div a {
+      background-color: #ff7920;
+      color: white;
+      padding: 8px;
+      border: none;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200; }
+      .d-flex .card div a:hover {
+        background-color: white;
+        color: #ff7920;
+        border: 1px solid #ff7920; }
+
+.ubicacion {
+  display: flex;
+  justify-content: space-around; }
+  .ubicacion .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .ubicacion .texto h2 {
+      color: #ff7920;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600; }
+    .ubicacion .texto p {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+      margin: 30px; }
+    .ubicacion .texto a {
+      background-color: #ff7920;
+      color: white;
+      padding: 8px;
+      border-radius: 10px; }
+  .ubicacion .imagen img {
+    height: 700px;
+    margin-left: 20px;
+    display: flex;
+    margin: 50px; }
+
+/*ACCESORIOS*/
+.accesorios h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  background-color: #ff7920;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 50px; }
+
+.accesorios div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 15px; }
+  .accesorios div .tarjeta-accesorios {
+    border: 1px solid #ff7920;
+    width: 300px;
+    margin: 25px;
+    border-radius: 15px;
+    margin-bottom: 50px; }
+    .accesorios div .tarjeta-accesorios a img {
+      height: 250px;
+      width: 250px;
+      margin: 15px;
+      position: relative; }
+    .accesorios div .tarjeta-accesorios .descripcion {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 300;
+      position: absolute;
+      background-color: #ff7920;
+      padding: 5px;
+      width: 18rem;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+
+footer {
+  background-color: #ff7920;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; }
+  footer .logo img {
+    height: 100px; }
+  footer .redes {
+    margin: 20px; }
+    footer .redes a img {
+      height: 40px; }
+
+@media screen and (max-width: 900px) {
+  .hero {
+    height: 250px; } }
+
+@media screen and (max-width: 500px) {
+  .hero {
+    height: 100px; } }
+
+@media screen and (max-width: 700px) {
+  .presentacion img {
+    display: none; } }
+
+@media screen and (max-width: 1240px) {
+  .presentacion {
+    flex-direction: column;
+    height: 80%; }
+  .presentacion img {
+    width: 60%; }
+  .presentacion h1 {
+    font-size: 30px;
+    width: 80%;
+    text-align: center; } }
+
+@media screen and (max-width: 1190px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; }
+  .d-flex h2 {
+    margin: 5px;
+    text-align: center; }
+  .d-flex div {
+    margin: 10px; } }
+
+@media screen and (max-width: 1070px) {
+  .ubicacion {
+    flex-direction: column;
+    padding: 50px; }
+  .imagen {
+    display: none; } }
+
+@media screen and (max-width: 1628px) {
+  .accesorios div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
+
+@media screen and (max-width: 1330px) {
+  .accesorios div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
+
+@media screen and (max-width: 1010px) {
+  .accesorios div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); } }
+
+@media screen and (max-width: 680px) {
+  .accesorios div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr); } }
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 60px; }
+    footer .redes a img {
+      height: 20px; }
+    footer .logo img {
+      height: 60px; } }
+
+@media screen and (max-width: 900px) {
+  .ubicacion {
+    text-align: center; } }
