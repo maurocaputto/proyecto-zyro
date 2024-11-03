@@ -122,6 +122,57 @@
     }
 }
 
+/*BICICLETAS*/
+.bicicletas{
+    div{
+        h2{
+            color: $color-secundario;
+            font-size: nth($font-size, 2);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            margin: 40px;
+            background-color: $color-principal;
+            height: 40px;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        div{
+            div{
+                border: 1px solid $color-principal ;
+                width: 340px;
+                margin: 15px;
+                height: 300px;
+                text-align: center;
+                border-radius: 15px;
+                &:hover{
+                    border: 3px solid $color-principal;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        height: 250px
+                        
+                    }
+                }
+                p{
+                    color: rgb(0, 0, 0);
+                    font-size: nth($font-size, 1);
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 300;
+                    background-color: $color-cuaternario;
+                    height: 30px;
+    
+                }
+
+            }
+            
+        }
+    }
+}
+
 /*ACCESORIOS*/
 .accesorios{
     h2{
@@ -150,6 +201,9 @@
             margin: 25px;
             border-radius: 15px;
             margin-bottom: 50px;
+            &:hover{
+                border: 3px solid $color-principal;
+            }
             a{
                 img{
                     height: 250px;
@@ -172,6 +226,40 @@
                 border-top-right-radius:15px ;
 
             }
+        }
+    }
+}
+
+/*NOSOTROS*/
+.marca{
+    height: 650px;
+    h2{
+        color: $color-secundario;
+        font-size: nth($font-size, 2);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px;
+        background-color: $color-principal;
+        height: 40px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        p{
+            color: $color-texto-secundario;
+            font-size: nth($font-size, 1);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+        }
+        img{
+            height: 300px;
+            margin: 20px;
         }
     }
 }

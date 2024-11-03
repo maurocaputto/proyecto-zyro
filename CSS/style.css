@@ -171,17 +171,29 @@ h1{
 
 /*?----BICICLETAS----*/
 
-.bicicletas div div {
+.bicicletas div div div {
     border: 1px solid orange ;
-    width: 320px;
+    width: 340px;
     margin: 15px;
-    height: 350px;
+    height: 300px;
     text-align: center;
     border-radius: 15px;
 }
+.mountain{
+    display: flex;
+    justify-content: space-around;
+}
+.urbana{
+    display: flex;
+    justify-content: space-around;
+}
+.e-bikes{
+    display: flex;
+    justify-content: space-around;
+}
 .bicicletas a img{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    
 
 }
 .bicicletas h2{
@@ -189,24 +201,27 @@ h1{
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    margin: 20px;
+    margin: 40px;
     background-color: rgba(255, 121, 32, 0.719);
     height: 40px;
     padding: 5px;
-    width: 400px;
     border-radius: 10px;
+    text-align: center;
 }
 .bicicletas div p{
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
-    background-color: rgba(255, 121, 32, 0.411);
-    height: 30px;
-    
-    
+    background-color: rgba(241, 105, 14, 0.507);
+    height: 30px;   
+}
+.bicicletas div div a{
+    display: flex;
+    justify-content: center;
     
 }
+
 
 /*?----ACCESORIOS----*/
 
@@ -277,6 +292,9 @@ h1{
 }
 
 /*?----NOSOTROS----*/
+.marca{
+    height: 650px;
+}
 
 .marca h2{
     color: white;
@@ -288,48 +306,103 @@ h1{
     background-color: rgba(255, 121, 32, 0.719);
     height: 40px;
     padding: 5px;
+    border-radius: 10px;
 }
-.marca p{
+.marca div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.marca div p{
     color: black;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
     margin: 20px;
+    display: flex;
+    align-items: center;
 }
-.marca img{
+.marca div img{ 
     
     height: 300px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin: 20px;
 }
 /*?----CONTACTO----*/
 iframe{
     margin-left: 20px;
-    height: 500px;
-    width: 500px;
-    display: inline;
+    height: 200px;
+    width: 100%;
+    margin: 30px;
+    
 }
+.informacion{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .contacto h2{
-    color: black;
+    color: white;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    margin-left: 20px;
+    text-align: center;
+    margin: 30px;
+    background-color: rgba(255, 121, 32, 0.719);
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;  
+    width: 500px;  
 }
 .contacto form{
     color: black;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-    margin-left: 20px;
+    margin-left: 20px;   
+}
+input{
+    width: 430px;
+    margin: 15px;
+    border: 1px solid rgba(255, 121, 32, 0.719);
+}
+textarea{
+    width: 510px;
+    height: 300px;
+    border: 1px solid rgba(255, 121, 32, 0.719);
     
 }
+.enviar{
+    background-color: rgb(255, 121, 32);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;   
+}
+
+.encontranos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .encontranos h2{
-    color: black;
+    color: white;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    margin-left: 20px;
+    text-align: center;
+    margin: 30px;
+    background-color: rgba(255, 121, 32, 0.719);
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px; 
+    width: 500px;
 }
 .encontranos div h3{
     color: black;
@@ -337,6 +410,7 @@ iframe{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     margin-left: 20px;
+    text-align: center;
 
 }
 .encontranos h4{
@@ -345,6 +419,10 @@ iframe{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
     margin-left: 20px;
+    margin-top: 10px;
+}
+.telefono{
+    margin-top: 20px;
 }
 
 /*!------FOOTER------*/
@@ -511,6 +589,9 @@ header nav ul li a:hover{
 .tarjeta-accesorios:hover{
     border: 3px solid rgb(255, 121, 32);
 }
+.bicicletas div div div:hover{
+    border: 3px solid rgb(255, 121, 32);
+}
 
 
 
@@ -524,38 +605,3 @@ header nav ul li a:hover{
 
 
 
-
-/*--<section class="accesorios">
-            <h2>Accesorios</h2>
-            <div>
-                <div class="grid-producto-1">
-                
-                    <a href=""><img src="../img/Guantes-alto-rendimiento.jpg" alt="guantes color negro sin dedos"></a>
-                    <p>Guantes alto rendimiento</p>
-                </div>
-                
-                <div class="grid-producto-2"> 
-                    <a href=""><img src="../img/Casco-mh15.jpg" alt="Casco deportivo negro y rojo"></a>
-                    <p>Casco mh15</p>
-                </div>
-                
-                <div class="grid-producto-3">
-                    
-                    <a href=""><img src="../img/Inflador.jpg" alt="Inflador de bicicleta negro"></a>
-                    <p>Inflador</p>
-                </div>
-                <div class="grid-producto-4">
-                    
-                    <a href=""><img src="../img/Casco-urbano.jpg" alt="Inflador de bicicleta negro"></a>
-                    <p>Casco urbano</p>
-                </div>
-                <div class="grid-producto-5">
-                    
-                    <a href=""><img src="../img/Guantes-de-silicona.jpg" alt="Inflador de bicicleta negro"></a>
-                    <p>Guantes de silicona</p>
-                </div>
-
-            </div>
-            
-
-        </section>--*/

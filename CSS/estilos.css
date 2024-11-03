@@ -37,7 +37,7 @@ li .nav-lin {
 /*INDEX*/
 .hero {
   height: 400px;
-  background-image: url("../img/Portada.jpg");
+  background-image: url("../../img/portada.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -129,6 +129,41 @@ li .nav-lin {
     display: flex;
     margin: 50px; }
 
+/*BICICLETAS*/
+.bicicletas div h2 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  margin: 40px;
+  background-color: #ff7920;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center; }
+
+.bicicletas div div div {
+  border: 1px solid #ff7920;
+  width: 340px;
+  margin: 15px;
+  height: 300px;
+  text-align: center;
+  border-radius: 15px; }
+  .bicicletas div div div:hover {
+    border: 3px solid #ff7920; }
+  .bicicletas div div div a {
+    display: flex;
+    justify-content: center; }
+    .bicicletas div div div a img {
+      height: 250px; }
+  .bicicletas div div div p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    background-color: rgba(241, 105, 14, 0.507);
+    height: 30px; }
+
 /*ACCESORIOS*/
 .accesorios h2 {
   display: flex;
@@ -156,6 +191,8 @@ li .nav-lin {
     margin: 25px;
     border-radius: 15px;
     margin-bottom: 50px; }
+    .accesorios div .tarjeta-accesorios:hover {
+      border: 3px solid #ff7920; }
     .accesorios div .tarjeta-accesorios a img {
       height: 250px;
       width: 250px;
@@ -172,6 +209,35 @@ li .nav-lin {
       width: 18rem;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px; }
+
+/*NOSOTROS*/
+.marca {
+  height: 650px; }
+  .marca h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+    background-color: #ff7920;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px; }
+  .marca div {
+    display: flex;
+    justify-content: space-around; }
+    .marca div p {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+      margin: 20px;
+      display: flex;
+      align-items: center; }
+    .marca div img {
+      height: 300px;
+      margin: 20px; }
 
 footer {
   background-color: #ff7920;
