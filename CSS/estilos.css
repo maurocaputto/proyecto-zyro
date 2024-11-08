@@ -37,7 +37,7 @@ li .nav-lin {
 /*INDEX*/
 .hero {
   height: 400px;
-  background-image: url("../../img/portada.jpg");
+  background-image: url("../img/portada.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -145,7 +145,7 @@ li .nav-lin {
 .bicicletas div div div {
   border: 1px solid #ff7920;
   width: 340px;
-  margin: 15px;
+  margin: 20px;
   height: 300px;
   text-align: center;
   border-radius: 15px; }
@@ -239,6 +239,84 @@ li .nav-lin {
       height: 300px;
       margin: 20px; }
 
+/*CONTACTO*/
+.informacion {
+  display: flex;
+  justify-content: space-around; }
+  .informacion .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .informacion .contacto h2 {
+      color: white;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin: 30px;
+      background-color: rgba(255, 121, 32, 0.719);
+      height: 40px;
+      padding: 5px;
+      border-radius: 10px;
+      width: 500px; }
+    .informacion .contacto form {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+      margin-left: 20px; }
+      .informacion .contacto form div input {
+        width: 430px;
+        margin: 15px;
+        border: 1px solid rgba(255, 121, 32, 0.719); }
+      .informacion .contacto form div div textarea {
+        width: 510px;
+        height: 300px;
+        border: 1px solid rgba(255, 121, 32, 0.719); }
+      .informacion .contacto form div .enviar {
+        background-color: #ff7920;
+        color: white;
+        padding: 8px;
+        border-radius: 10px; }
+  .informacion .encontranos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .informacion .encontranos h2 {
+      color: white;
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin: 30px;
+      background-color: rgba(255, 121, 32, 0.719);
+      height: 40px;
+      padding: 5px;
+      border-radius: 10px;
+      width: 500px; }
+    .informacion .encontranos div h3 {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 800;
+      margin-left: 20px;
+      text-align: center; }
+    .informacion .encontranos div .sucursal h4 {
+      color: black;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+      margin-left: 20px;
+      margin-top: 10px; }
+    .informacion .encontranos .telefono {
+      margin-top: 20px; }
+
+iframe {
+  margin-left: 20px;
+  height: 200px;
+  width: 100%;
+  margin: 30px; }
+
 footer {
   background-color: #ff7920;
   height: 100px;
@@ -293,6 +371,21 @@ footer {
   .imagen {
     display: none; } }
 
+@media screen and (max-width: 1500px) {
+  .bicicletas div div div {
+    width: 260px;
+    height: 220px; }
+  .bicicletas a img {
+    height: 150px; } }
+
+@media screen and (max-width: 860px) {
+  .bicicletas div div div {
+    width: 260px;
+    height: 220px;
+    margin: 10px; }
+  .bicicletas a img {
+    height: 150px; } }
+
 @media screen and (max-width: 1628px) {
   .accesorios div {
     display: grid;
@@ -316,6 +409,75 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr); } }
+
+@media screen and (max-width: 1400px) {
+  .marca {
+    height: 450px; }
+  .taller {
+    display: none; } }
+
+@media screen and (max-width: 1000px) {
+  .marca {
+    height: 500px; } }
+
+@media screen and (max-width: 920px) {
+  .marca {
+    height: 700px; }
+  .marca div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .taller {
+    display: none; }
+  .innovacion {
+    display: none; } }
+
+@media screen and (max-width: 650px) {
+  .marca {
+    height: 400px; }
+  .marca img {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .marca {
+    height: 550px; } }
+
+@media screen and (max-width: 400px) {
+  .marca {
+    height: 650px; } }
+
+@media screen and (max-width: 1120px) {
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px; }
+  .contacto {
+    align-items: center;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 600px) {
+  .contacto h2 {
+    width: 300px; }
+  .contacto textarea {
+    width: 420px; }
+  .contacto {
+    text-align: center; }
+  .encontranos h2 {
+    width: 300px; } }
+
+@media screen and (max-width: 460px) {
+  .contacto h2 {
+    width: 300px; }
+  .contacto textarea {
+    width: 280px;
+    height: 200; }
+  .contacto {
+    text-align: center; }
+  .encontranos h2 {
+    width: 300px; }
+  input {
+    width: 300px; } }
 
 @media screen and (max-width: 600px) {
   footer {

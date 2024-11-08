@@ -5,4 +5,17 @@ $color-cuaternario: rgba(241, 105, 14, 0.507);
 $color-texto-secundario: rgb(0, 0, 0);
 $font-size: 20px, 30px, 40px
 
+%boton{
+    background-color: rgb(255, 121, 32);
+    color: white;
 
+}
+
+/*--PROFE, NO SE QUE PASO PERO SI BORRABA EL ERROR DE ARRIBA NO ME TOMABA COMO VALIDO EL CODIGO PARA APLICAR EXTEND, POR ESO LO DEJE/ LO DEJE ASI PORQUE SINO NO ME DEJABA APLICAR EL EXTEND--*/
+
+%boton{
+    background-color: rgb(255, 121, 32);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
